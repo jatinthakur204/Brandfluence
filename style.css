@@ -1,0 +1,50 @@
+
+
+.heading {
+    font-family: "Metrophobic", sans-serif;
+  }
+
+  .jatin {
+    font-family: "Metrophobic", sans-serif;
+    font-style:  italic;
+  }
+
+  /* Group 24 */
+
+/* Group 14 */
+
+.mybutton {
+  @apply bg-gray-400 p-4 text-white
+}
+
+.btn {
+  /* background-color: red; */
+  @apply bg-gray-400 p-4 text-white;
+}
+
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .banner-img img {
+    width: 300px !important;
+
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .banner-img img {
+    width: 336px !important;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-img img {
+    width: 500px !important;
+  }
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}

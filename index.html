@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap"
+      rel="stylesheet"
+    />
+    <title>Brandfluence</title>
+  </head>
+  <body>
+    <!-- header  -->
+    <header
+      class="banner-wrapper bg-cover bg-center bg-[url('./images/hero-bg.png')]  md:h-[660px] lg:h-[842px] h-[568px]  sm:h-[750px] "
+    >
+      <!-- Navbar -->
+      <nav class="flex py-4 px-4 sm:px-10 relative z-50">
+        <div class="flex flex-wrap items-center justify-between w-full">
+          <!-- Logo -->
+          <a href="">
+            <img src="./images/logo.png" alt="logo" class="w-10 h-10" />
+          </a>
+
+          <!-- Hamburger Menu -->
+          <button
+            class="lg:hidden peer z-50"
+            aria-expanded="false"
+            aria-controls="navbar-menu"
+          >
+            <svg
+              class="w-7 h-7 text-white"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Menu Items -->
+          <ul
+            id="navbar-menu"
+            class="hidden lg:flex flex-col lg:flex-row gap-5 lg:gap-x-5 bg-[#1037fd] lg:bg-transparent h-[500px] overflow-y-auto text-white fixed lg:relative lg:w-auto top-0 left-0 h-full lg:h-auto w-3/4 max-w-xs lg:max-w-none shadow-lg lg:shadow-none z-40 peer-focus:block"
+          >
+            <li class="mb-6 lg:mb-0 lg:hidden px-4 py-2">
+              <a href="">
+                <img
+                  src="./images/logo.png"
+                  alt="logo"
+                  class="w-22"
+                />
+              </a>
+            </li>
+            <li class="border-b lg:border-none border-gray-300 px-4 py-3">
+              <a href="" class="text-white lg:text-white block font-bold"
+                >Home</a
+              >
+            </li>
+            <li class="border-b lg:border-none border-gray-300 px-4 py-3">
+              <a href="" class="text-white lg:text-white block">Creator</a>
+            </li>
+            <li class="border-b lg:border-none border-gray-300 px-4 py-3">
+              <a href="" class="text-white lg:text-white block">Brands</a>
+            </li>
+            <li class="border-b lg:border-none border-gray-300 px-4 py-3">
+              <a href="" class="text-white lg:text-white block">Marketplace</a>
+            </li>
+          </ul>
+
+          <!-- Navbar Buttons -->
+          <div class="hidden lg:flex space-x-4">
+            <button
+              class="border border-[#F1F7FF] bg-[#F1F7FF] rounded-[24px] w-[137px] h-[32px] flex items-center justify-center shadow-[0px_0px_16px_0px_#0023D3]"
+            >
+              <span class="text-[#0023D3]">Contact Us</span>
+              <img
+                src="./images/call-icon.svg"
+                alt="Call Icon"
+                class="w-4 h-4 ml-2"
+              />
+            </button>
+            <button
+              class="text-white text-[18px] italic font-bold underline hidden md:block"
+            >
+              LOGIN
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <section class="banner-sec px-4 sm:px-6 lg:px-12">
+        <div
+          class="banner-inner-wrapper flex flex-col md:flex-row items-center justify-between sm:py-6"
+        >
+          <!-- Left Content -->
+          <div
+            class="banner-content text-center md:text-left md:w-1/2 flex flex-col items-center md:items-start px-4"
+          >
+            <h1
+              class="text-white text-[27px] sm:text-[40px] lg:text-[58px] xl:text-[70px] leading-tight lg:leading-[79px] font-normal"
+            >
+              Real Influence for <br />
+              <span class="font-bold">Brands</span>
+            </h1>
+            <p class="text-white mt-4 sm:mt-5 md:mt-6 text-[14px] lg:text-lg">
+              Our marketplace offers a wide range of features designed to make
+              the collaboration process efficient and effective.
+            </p>
+            <button
+              class="bg-[#F1F7FF] w-[151px] h-[42px] flex items-center px-3 py-2 rounded-full mt-4"
+            >
+              <p class="text-[#1037FD] text-sm font-semibold">Explore more</p>
+              <img src="./images/forward-btn.svg" alt="" class="w-5 ml-2" />
+            </button>
+          </div>
+
+         
+          <div class="banner-img  ">
+            <img
+              src="./images/banner-img.png"
+              alt="Banner Image"
+              class=""
+            />
+          </div>
+          
+          
+        </div>
+
+       
+       <div class="flex justify-center items-center w-full pt-10"
+      
+       >
+        <div class="dropdown-btn flex justify-center absolute   hidden  sm:block  ">
+          <div
+            class="bg-[#6D85FC4F] p-4 rounded-full border-dashed border-2 border-white h-[62px] w-[62px] md:h-[102px] md:w-[102px] flex items-center justify-center"
+          >
+            <img 
+            onclick="scrollToElement()"
+            src="/images/banner-btn.png" alt="Button Icon" class="w-10" />
+          </div>
+        </div>
+       </div>
+        
+      </section>
+    </header>
+
+    
+
+    <section
+    id="second-sec"
+      class="workinf-sec bg-[#FFF6F6] grid grid-cols-1 lg:grid-cols-2 items-center gap-6 px-4 px-12 py-8"
+    >
+      <div class="workin-sec-img justify-center flex">
+        <img
+          src="./images/creator-img-1.png"
+          alt=""
+          class="sm:h-[549px] w-[596px]"
+        />
+      </div>
+
+      <div class="working-sec-content">
+        <div
+          class="top-wrapper flex flex-col items-center justify-center lg:items-start"
+        >
+          <div
+            class="working-tag bg-[#8DBDFF] w-[104px] h-[31px] flex justify-center items-center rounded-full"
+          >
+            <p class="text-[#1037FD]">CREATOR</p>
+          </div>
+
+          <h2 class="text-[20px] sm:text-[40px]">
+            How <span class="font-bold text-[#1037FD]">BrandFluence</span>
+            <br />
+            Works for <span class="font-bold text-[#1037FD]"> Creators</span> ?
+          </h2>
+        </div>
+
+        <div class="working-points grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div
+            class="working-box-1 bg-[#E8F0F8] rounded-xl p-5 xl:w-[326px] h-[239px]"
+          >
+            <img
+              src="./images/creator-small-icon-1.png"
+              alt=""
+              class="w-[62px] h-[62px]"
+            />
+
+            <p class="text-[#0D132C] font-semibold text-[22px]">
+              Create Account
+            </p>
+
+            <p class="text-[#1F253C] text-[15px] leading-[21px]">
+              Our marketplace offers a wide range of features designed to make
+              the collaboration process efficient and effective.
+            </p>
+          </div>
+
+          <div
+            class="working-box-1 bg-white rounded-xl p-5 xl:w-[326px] h-[239px]"
+          >
+            <img
+              src="./images/complete-profile.svg"
+              alt=""
+              class="w-[62px] h-[62px]"
+            />
+
+            <p class="text-[#0D132C] font-semibold text-[22px]">
+              Complete Profile
+            </p>
+
+            <p class="text-[#1F253C] text-[15px] leading-[21px]">
+              Our marketplace offers a wide range of features designed to make
+              the collaboration process efficient and effective.
+            </p>
+          </div>
+
+          <div
+            class="working-box-1 bg-white rounded-xl p-5 xl:w-[326px] h-[239px]"
+          >
+            <img
+              src="./images/find-brand.svg"
+              alt=""
+              class="w-[62px] h-[62px]"
+            />
+
+            <p class="text-[#0D132C] font-semibold text-[22px]">Find Brand</p>
+
+            <p class="text-[#1F253C] text-[15px] leading-[21px]">
+              Our marketplace offers a wide range of features designed to make
+              the collaboration process efficient and effective.
+            </p>
+          </div>
+
+          <div
+            class="working-box-1 bg-[#E8F0F8] rounded-xl p-5 xl:w-[326px] h-[239px]"
+          >
+            <img
+              src="./images/collabration.png"
+              alt=""
+              class="w-[62px] h-[62px]"
+            />
+
+            <p class="text-[#0D132C] font-semibold text-[22px]">
+              Collaboration
+            </p>
+
+            <p class="text-[#1F253C] text-[15px] leading-[21px]">
+              Our marketplace offers a wide range of features designed to make
+              the collaboration process efficient and effective.
+            </p>
+          </div>
+        </div>
+
+        <button
+          class="explore-btn bg-[#F1F7FF] flex items-center px-3 py-2 rounded-full mt-4 border border-solid border-[#F1F7FF]"
+        >
+          <p class="text-[#1037FD] text-md">Explore more</p>
+
+          <img src="./images/forward-btn.svg" alt="" class="w-5" />
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="workinf-sec bg-[#FFF6F6] grid grid-cols-1 lg:grid-cols-2 items-center gap-6 px-4 px-12 py-8"
+    >
+      <div class="working-sec-content order-2 lg:order-1">
+        <div
+          class="top-wrapper flex flex-col items-center justify-center lg:items-start"
+        >
+          <div
+            class="working-tag bg-[#8DBDFF] w-[104px] h-[31px] flex justify-center items-center rounded-full"
+          >
+            <p class="text-[#1037FD]">BRAND</p>
+          </div>
+
+          <h2 class="text-[20px] sm:text-[40px]">
+            How <span class="font-bold text-[#1037FD]">BrandFluence</span>
+            <br />
+            Works for <span class="font-bold text-[#1037FD]"> Creators</span> ?
+          </h2>
+        </div>
+
+        <div class="working-points grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div
+            class="working-box-1 bg-[#E8F0F8] rounded-xl p-5 xl:w-[326px] h-[239px]"
+          >
+            <img
+              src="./images/creator-small-icon-1.png"
+              alt=""
+              class="w-[62px] h-[62px]"
+            />
+
+            <p class="text-[#0D132C] font-semibold text-[22px]">
+              Create Account
+            </p>
+
+            <p class="text-[#1F253C] text-[15px] leading-[21px]">
+              Our marketplace offers a wide range of features designed to make
+              the collaboration process efficient and effective.
+            </p>
+          </div>
+
+          <div
+            class="working-box-1 bg-white rounded-xl p-5 xl:w-[326px] h-[239px]"
+          >
+            <img
+              src="./images/complete-profile.svg"
+              alt=""
+              class="w-[62px] h-[62px]"
+            />
+
+            <p class="text-[#0D132C] font-semibold text-[22px]">
+              Complete Profile
+            </p>
+
+            <p class="text-[#1F253C] text-[15px] leading-[21px]">
+              Our marketplace offers a wide range of features designed to make
+              the collaboration process efficient and effective.
+            </p>
+          </div>
+
+          <div
+            class="working-box-1 bg-white rounded-xl p-5 xl:w-[326px] h-[239px]"
+          >
+            <img
+              src="./images/find-brand.svg"
+              alt=""
+              class="w-[62px] h-[62px]"
+            />
+
+            <p class="text-[#0D132C] font-semibold text-[22px]">Find Brand</p>
+
+            <p class="text-[#1F253C] text-[15px] leading-[21px]">
+              Our marketplace offers a wide range of features designed to make
+              the collaboration process efficient and effective.
+            </p>
+          </div>
+
+          <div
+            class="working-box-1 bg-[#E8F0F8] rounded-xl p-5 xl:w-[326px] h-[239px]"
+          >
+            <img
+              src="./images/collabration.png"
+              alt=""
+              class="w-[62px] h-[62px]"
+            />
+
+            <p class="text-[#0D132C] font-semibold text-[22px]">
+              Collaboration
+            </p>
+
+            <p class="text-[#1F253C] text-[15px] leading-[21px]">
+              Our marketplace offers a wide range of features designed to make
+              the collaboration process efficient and effective.
+            </p>
+          </div>
+        </div>
+
+        <button
+          class="explore-btn bg-[#F1F7FF] flex items-center px-3 py-2 rounded-full mt-4 border border-solid border-[#F1F7FF]"
+        >
+          <p class="text-[#1037FD] text-md">Explore more</p>
+
+          <img src="./images/forward-btn.svg" alt="" class="w-5" />
+        </button>
+      </div>
+
+      <div class="workin-sec-img justify-center flex order-1 lg:order-2">
+        <img
+          src="./images/creator-img-2.png"
+          alt=""
+          class="sm:h-[549px] w-[596px]"
+        />
+      </div>
+    </section>
+    <!-- cta section-->
+
+    <section
+      class="cta relative bg-[url('./images/cta-img.png')] bg-cover bg-center bg-no-repeat min-h-[480px] md:min-h-[400px] lg:min-h-[500px] flex items-center justify-center"
+    >
+      <div class="absolute inset-0 bg-[#1037FD] bg-opacity-60"></div>
+
+      <div class="relative z-10 text-center px-4 space-y-6">
+        <h1
+          class="text-white lg:text-[40px] lg:leading-[52px] text-[21px] sm:text-[30px] sm:leading-[40px] leading-[26px] font-bold"
+        >
+          Connecting brands with digital stars that <br />
+          takes you far.
+        </h1>
+
+        <button
+          class="mt-4 px-6 py-2 bg-white text-[#1037FD] bg-[#F1F7FF] rounded-full font-semibold"
+        >
+          Connect now →
+        </button>
+      </div>
+
+      <div class="absolute top-1/4 left-[10%] transform -translate-y-1/2">
+        <img
+          src="./images/cta-insta.png"
+          alt="Instagram"
+          class="w-[134px] h-[134px]"
+        />
+      </div>
+
+      <div class="absolute bottom-[10%] left-[30%] transform -translate-x-1/2">
+        <img
+          src="./images/cta-youtube.png"
+          alt="YouTube"
+          class="w-[126px] h-[126px]"
+        />
+      </div>
+
+      <div class="absolute top-1/2 right-[10%] transform-translate-y-1/2">
+        <img
+          src="./images/cta-facebook.png"
+          alt="Facebook"
+          class="w-[150px] h-[150px]"
+        />
+      </div>
+    </section>
+
+    <!--footer-->
+
+    <footer class="flex py-4 px-4 sm:px-10 bg-[#1037FD] h-[199px]">
+      <div class="flex flex-wrap items-center justify-between gap-5 w-full">
+        <a href="">
+          <img src="./images//logo.png" alt="logo" class="w-10 h-10" />
+
+          <p class="text-white">BrandFluence</p>
+        </a>
+
+        <div>
+          <ul class="flex justify-center">
+            <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
+              <a href="" class="text-white block font-noraml text-[16px]"
+                >About</a
+              >
+            </li>
+            <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
+              <a href="" class="text-white block font-noraml text-[16px]"
+                >Brand</a
+              >
+            </li>
+            <li
+              class="max-lg:border-b text-white border-gray-300 max-lg:py-3 px-3"
+            >
+              <a href="" class="block font-noraml text-[16px]">Brands</a>
+            </li>
+            <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
+              <a href="" class="text-white block font-noraml text-[16px]"
+                >Categories</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="soci-media flex gap-5">
+          <img src="./images/face-book.png" alt="" class="w-[12px] h-[22px]" />
+          <img src="./images/instagram.png" alt="" class="w-[22px] h-[22px]" />
+          <img src="./images/youtube.png" alt="" class="w-[31px] h-[24px]" />
+        </div>
+      </div>
+    </footer>
+
+
+    
+    <script>
+      function scrollToElement() {
+        document.getElementById('second-sec').scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    </script>
+    
+  </body>
+</html>
